@@ -1,1 +1,117 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    color: #2c495f!important;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.centrar{
+    display: flex!important;
+    flex-direction: column!important;
+    align-items: left!important;
+    justify-content: center!important;
+}
+
+.font-ping-estudio{
+    font-family: 'Rock Salt', cursive;
+}
+
+.font-khand{
+    font-family: 'Khand', sans-serif;
+}
+
+.font-nanum{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.text-color-theme {
+    color: #2c495f!important;
+}
+
+.nav-link{
+    color: white!important;
+}
+
+.nav-link:hover{
+    color: red!important;
+}
+
+#image {
+    height: 100%;
+    width: 100%;
+    background: rgba(87,35,100,1);
+    background-image: url('assets/images/fondo2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.4);
+    /*z-index: 1;*/
+}
+
+#crm {
+    height: 100vh;
+    width: 100%;
+    background: rgba(87,35,100,1);
+    background-image: url('assets/images/cmr.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.6);
+    /*z-index: 1;*/
+}
+
+#contacto {
+    height: 100vh;
+    width: 100%;
+    background: rgba(87,35,100,1);
+    background-image: url('assets/images/contacto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.6);
+    /*z-index: 1;*/
+}
+
+.info {
+    z-index: 1!important;
+}
+
+.fondo-morado {
+    background: rgba(87,35,100,1);
+}
+
+.example {
+    height: 100vh;
+    width: 100%;
+}
+
+.mostrar-servicios {
+    display: inline !important;
+}
+
+/* Estilo de los Inputs */
+.estilo-inputs {
+    /*border: 0!important;*/
+    border-radius: 5px!important;
+    border: 1px solid white!important;
+    background-color: transparent!important;
+    color: white!important;
+    width: 100%!important;
+}
+
+@media (max-width: 450px) {
+    h1 {
+      font-size: 35px!important;
+    }
+    h4 {
+        font-size: 10px!important;
+    }
+    h5 {
+        font-size: 11px!important;
+    }
+    .mostrar-servicios {
+        display: none !important;
+    }
+    #services h1{
+        text-align: right!important;
+    }
+}

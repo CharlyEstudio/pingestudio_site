@@ -1,0 +1,126 @@
+<section
+  id="contact-form"
+  class="section-side-image section-light sec-padding clearfix"
+>
+  <div class="img-holder col-md-12 col-sm-12 pull-left">
+    <div
+      class="background-imgholder"
+      style="background:url(assets/images/call.jpg);"
+    >
+      <img
+        class="nodisplay-image"
+        src="assets/images/call.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <!-- <div>
+          <img
+            src="http://via.placeholder.com/1000x1000"
+            alt=""
+            class="img-responsive"
+          />
+        </div> -->
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="ce-feature-box-36 margin-bottom">
+          <div class="text-box min-hei-2">
+            <div class="col-sm-12 nopadding">
+              <div class="sec-title-container less-padding-4 text-left">
+                <h5
+                  class="font-weight-4 less-mar-1 line-height-4 text-primary opacity-9"
+                >
+                  Contacto
+                </h5>
+                <h2 class="font-weight-6 less-mar-1 line-height-5">
+                  Información?
+                </h2>
+                <div class="ce-title-line align-left"></div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <!--end title-->
+
+            <form #f="ngForm">
+              <div class="form-body bg-light">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input
+                      ngModel
+                      id="name"
+                      class="input-1"
+                      type="text"
+                      placeholder="*Nombre"
+                      name="nombre"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      ngModel
+                      id="email"
+                      class="input-1"
+                      type="text"
+                      placeholder="*Email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <input
+                      ngModel
+                      id="phone"
+                      class="input-1"
+                      type="text"
+                      placeholder="*Celular"
+                      name="phone"
+                      required
+                    />
+                  </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <textarea
+                      ngModel
+                      id="comment"
+                      class="textaria-1"
+                      style="color: black!important;"
+                      placeholder="*Duda o pregunta"
+                      name="message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                  <br />
+                  <div class="col-md-12 text-center">
+                    <button
+                      class="btn btn-prim btn-round btn-medium uppercase"
+                      type="button" (click)="enviar(f)"
+                    >
+                      <i class="fa fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                  </div>
+                </div>
+                <!-- end row -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--end item-->
+    </div>
+  </div>
+</section>
+<div class=" clearfix"></div>

@@ -1,0 +1,47 @@
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <div class="carousel-inner" style="height: 100vh!important;">
+
+      <div class="carousel-item active" style="height: 100vh!important;">
+
+        <div id="contacto"></div>
+
+        <div class="carousel-caption d-none d-md-block text-left centrar" style="height: 100vh;">
+
+            <h1 class="display-3 font-ping-estudio mb-1">Contacto</h1>
+
+            <br>
+
+            <form #f="ngForm">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email</label>
+                  <br>
+                  <input ngModel name="email" type="email" class="estilo-inputs" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">¿Qué necesitas?</label>
+                  <select [ngModel]="servicio" name="selServ" class="estilo-inputs" id="exampleFormControlSelect1">
+                    <option value="0">Selecciona un servicio</option>
+                    <option value="CRM">CRM</option>
+                    <option value="GPS">GPS Tracker</option>
+                    <option value="Single">Single page</option>
+                    <option value="Landing">Landing Page</option>
+                    <option value="Commerce">E-Commerce</option>
+                    <option value="Micro">Micro Servicios</option>
+                    <option value="Big">Big Data</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Comentario/Duda</label>
+                  <textarea ngModel name="comentario" class="estilo-inputs" id="exampleFormControlTextarea1" rows="3" placeholder="Deje un comentario o duda."></textarea>
+                </div>
+                <button type="button" (click)="enviar(f)" class="btn btn-primary">Enviar</button>
+            </form>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+</div>
